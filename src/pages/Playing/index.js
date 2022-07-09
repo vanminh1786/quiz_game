@@ -119,7 +119,7 @@ function Playing() {
 	const changeQuestion = () => {
 		if (index == questions.length - 1) {
 			dispatch(setTimeEnd(new Date().getTime()))
-			navigate('/summary', { replace: true })
+			navigate('/quiz_game/summary', { replace: true })
 			return
 		}
 
@@ -128,7 +128,7 @@ function Playing() {
 	}
 
 	const exit = () => {
-		navigate('/', { replace: true })
+		navigate('/quiz_game', { replace: true })
 	}
 
 	return (

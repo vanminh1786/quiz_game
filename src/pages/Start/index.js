@@ -27,7 +27,7 @@ function Start() {
 		dispatch(setIncorrect(0))
 		dispatch(setMaxStreak())
 		dispatch(setTimeStart(new Date().getTime()))
-		navigate('/play', { replace: true })
+		navigate('/quiz_game/play', { replace: true })
 	}
 
 	return (

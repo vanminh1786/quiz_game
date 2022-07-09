@@ -19,7 +19,7 @@ function Summary() {
 		(information.correct + information.incorrect)
 
 	const playAgain = () => {
-		navigate('/', { replace: true })
+		navigate('/quiz_game/play', { replace: true })
 	}
 
 	return (
