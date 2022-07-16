@@ -25,7 +25,7 @@ function Start() {
 		dispatch(setTotalPoint(0))
 		dispatch(setCorrect(0))
 		dispatch(setIncorrect(0))
-		dispatch(setMaxStreak())
+		dispatch(setMaxStreak(0))
 		dispatch(setTimeStart(new Date().getTime()))
 		navigate('/quiz_game/play', { replace: true })
 	}
