@@ -14,9 +14,9 @@ function Summary() {
 	)
 	const false_result = 100 - true_result
 	const speed =
-		(information.timeEnd - information.timeStart) /
+		Math.round((information.timeEnd - information.timeStart) /
 		1000 /
-		(information.correct + information.incorrect)
+		(information.correct + information.incorrect))
 
 	const playAgain = () => {
 		navigate('/quiz_game/play', { replace: true })
